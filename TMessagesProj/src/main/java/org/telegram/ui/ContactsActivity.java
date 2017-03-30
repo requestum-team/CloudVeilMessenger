@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.Constants;
 import org.telegram.messenger.BuildVars;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MessagesStorage;
@@ -134,6 +135,14 @@ public class ContactsActivity extends BaseFragment implements NotificationCenter
         } else {
             needPhonebook = true;
         }
+        // Cloudveil Start
+        if (Constants.LOCK_DISABLE_BOTS) {
+            allowBots = false;
+        }
+        if (Constants.LOCK_DISABLE_SECRET_CHAT) {
+            createSecretChat = false;
+        }
+        //CloudVeil End
 
         ContactsController.getInstance().checkInviteText();
 

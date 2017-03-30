@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.Constants;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
 import org.telegram.messenger.support.widget.RecyclerView;
@@ -59,7 +60,9 @@ public class SearchAdapter extends RecyclerListView.SelectionAdapter {
         onlyMutual = mutual;
         allowUsernameSearch = usernameSearch;
         allowChats = chats;
-        allowBots = bots;
+        if (Constants.LOCK_DISABLE_BOTS) {
+            allowBots = false;
+        }
         channelId = searchChannelId;
         searchAdapterHelper = new SearchAdapterHelper();
         searchAdapterHelper.setDelegate(new SearchAdapterHelper.SearchAdapterHelperDelegate() {

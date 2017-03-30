@@ -53,6 +53,7 @@ import android.widget.TextView;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.Constants;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MessagesStorage;
 import org.telegram.messenger.NotificationsController;
@@ -2840,9 +2841,13 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
                             textCell.setTextAndValueAndIcon(LocaleController.getString("Notifications", R.string.Notifications), LocaleController.getString("NotificationsOff", R.string.NotificationsOff), R.drawable.profile_list);
                         }
                     } else if (i == startSecretChatRow) {
-                        textCell.setText(LocaleController.getString("StartEncryptedChat", R.string.StartEncryptedChat));
-                        textCell.setTag(Theme.key_windowBackgroundWhiteGreenText2);
-                        textCell.setTextColor(Theme.getColor(Theme.key_windowBackgroundWhiteGreenText2));
+                        //CloudVeil Start
+                        if (!Constants.LOCK_DISABLE_SECRET_CHAT) {
+                            textCell.setText(LocaleController.getString("StartEncryptedChat", R.string.StartEncryptedChat));
+                            textCell.setTag(Theme.key_windowBackgroundWhiteGreenText2);
+                            textCell.setTextColor(Theme.getColor(Theme.key_windowBackgroundWhiteGreenText2));
+                        }
+                        //CloudVeil. End
                     } else if (i == settingsKeyRow) {
                         IdenticonDrawable identiconDrawable = new IdenticonDrawable();
                         TLRPC.EncryptedChat encryptedChat = MessagesController.getInstance().getEncryptedChat((int) (dialog_id >> 32));
