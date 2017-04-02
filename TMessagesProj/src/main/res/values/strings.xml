@@ -763,7 +763,7 @@
     <string name="UsernameInvalidShort">A username must have at least 5 characters.</string>
     <string name="UsernameInvalidLong">The username must not exceed 32 characters.</string>
     <string name="UsernameInvalidStartNumber">Sorry, a username can\'t start with a number.</string>
-    <string name="UsernameHelp">You can choose a username on <![CDATA[<b>]]>Telegram<![CDATA[</b>]]>. If you do, other people will be able to find you by this username and contact you without knowing your phone number.\n\nYou can use <![CDATA[<b>]]>a–z<![CDATA[</b>]]>, <![CDATA[<b>]]>0–9<![CDATA[</b>]]> and underscores. Minimum length is <![CDATA[<b>]]>5<![CDATA[</b>]]> characters.</string>
+    <string name="UsernameHelp">You can choose a username on <![CDATA[<b>]]>CloudVeil Messenger<![CDATA[</b>]]>. If you do, other people will be able to find you by this username and contact you without knowing your phone number.<![CDATA[<br><br>]]>You can use <![CDATA[<b>]]>a–z<![CDATA[</b>]]>, <![CDATA[<b>]]>0–9<![CDATA[</b>]]> and underscores. Minimum length is <![CDATA[<b>]]>5<![CDATA[</b>]]> characters.</string>
     <string name="UsernameHelpLink">This link opens a chat with you on CloudVeil Messenger:\n%1$s</string>
     <string name="UsernameChecking">Checking username...</string>
     <string name="UsernameAvailable">%1$s is available.</string>
@@ -1396,11 +1396,11 @@
     <string name="PermissionContacts">CloudVeil Messenger needs access to your contacts so that you can connect with your friends across all your devices.</string>
     <string name="PermissionStorage">CloudVeil Messenger needs access to your storage so that you can send and save photos, videos, music and other media.</string>
     <string name="PermissionNoAudio">CloudVeil Messenger needs access to your microphone so that you can send voice messages.</string>
-    <string name="PermissionNoAudioVideo">CloudVeil Messenger needs access to your microphone so that you can record videos.</string>
+	<string name="PermissionNoAudioVideo">CloudVeil Messenger needs access to your microphone so that you can record videos.</string>
     <string name="PermissionNoCamera">CloudVeil Messenger needs access to your camera so that you can capture photos and videos.</string>
     <string name="PermissionNoLocation">CloudVeil Messenger needs access to your location so that you can share it with your friends.</string>
     <string name="PermissionNoLocationPosition">CloudVeil Messenger needs access to your location.</string>
-    <string name="PermissionDrawAboveOtherApps">CloudVeil Messenger needs access to draw above other apps to play videos in Picture-in-Picture mode.</string>
+	<string name="PermissionDrawAboveOtherApps">CloudVeil Messenger needs access to draw above other apps to play videos in Picture-in-Picture mode.</string>
     <string name="PermissionOpenSettings">SETTINGS</string>
     <!--Intro view-->
     <string name="Page1Title">CloudVeil Messenger</string>
