@@ -905,6 +905,8 @@
     <string name="BadgeNumber">Badge Counter</string>
     <string name="Short">Short</string>
     <string name="Long">Long</string>
+    <string name="SystemDefault">System Default</string>
+    <string name="SettingsDefault">CloudVeil Messenger</string>
     <string name="AutomaticMediaDownload">Automatic media download</string>
     <string name="WhenUsingMobileData">When using mobile data</string>
     <string name="WhenConnectedOnWiFi">When connected on Wi-Fi</string>

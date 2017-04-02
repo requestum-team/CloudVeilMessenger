@@ -77,6 +77,51 @@ public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
         return new RecyclerListView.Holder(view);
     }
 
+    /*@Override
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view;
+        switch (viewType) {
+            case 0:
+                view = new DrawerProfileCell(mContext);
+                break;
+            case 1:
+            default:
+                view = new EmptyCell(mContext, AndroidUtilities.dp(8));
+                break;
+            case 2:
+                view = new DividerCell(mContext);
+                break;
+            case 3:
+                view = new DrawerActionCell(mContext);
+				break;
+            }
+            DrawerActionCell actionCell = (DrawerActionCell) view;
+            if (i == 2) {
+                actionCell.setTextAndIcon(LocaleController.getString("NewGroup", R.string.NewGroup), R.drawable.menu_newgroup);
+            } else if (i == 3) {
+                actionCell.setTextAndIcon(LocaleController.getString("NewSecretChat", R.string.NewSecretChat), R.drawable.menu_secret);
+                //CloudVeil Start
+                if (Constants.LOCK_DISABLE_SECRET_CHAT) {
+                    actionCell.setEnabled(false);
+                    actionCell.setVisibility(View.GONE);
+                }
+                //CloudVeil End
+            } else if (i == 4) {
+                actionCell.setTextAndIcon(LocaleController.getString("NewChannel", R.string.NewChannel), R.drawable.menu_broadcast);
+            } else if (i == 6) {
+                actionCell.setTextAndIcon(LocaleController.getString("Contacts", R.string.Contacts), R.drawable.menu_contacts);
+            } else if (i == 7) {
+                actionCell.setTextAndIcon(LocaleController.getString("InviteFriends", R.string.InviteFriends), R.drawable.menu_invite);
+            } else if (i == 8) {
+                actionCell.setTextAndIcon(LocaleController.getString("Settings", R.string.Settings), R.drawable.menu_settings);
+            } else if (i == 9) {
+                actionCell.setTextAndIcon(LocaleController.getString("TelegramFaq", R.string.TelegramFaq), R.drawable.menu_help);
+            }
+        }
+        view.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        return new RecyclerListView.Holder(view);
+    }*/
+
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         switch (holder.getItemViewType()) {

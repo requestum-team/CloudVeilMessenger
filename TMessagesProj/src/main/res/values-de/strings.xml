@@ -1427,8 +1427,8 @@
     <string name="VoipFailed">Keine Verbindung möglich</string>
     <string name="VoipRinging">Es klingelt</string>
     <string name="VoipBusy">Besetzt</string>
-    <string name="VoipInCallBranding">Telegram-Anruf</string>
-    <string name="VoipOutgoingCall">Laufender CloudVeil Messenger-Anruf</string>
+    <string name="VoipInCallBranding">CloudVeil Messenger</string>
+    <string name="VoipOutgoingCall">Laufender Telegram Anruf</string>
     <string name="VoipEndCall">Anruf beenden</string>
     <string name="VoipOngoingAlertTitle">Ein anderer Anruf ist bereits aktiv</string>
     <string name="VoipOngoingAlert">Du bist mit <![CDATA[<b>%1$s</b>]]> bereits im Gespräch. Möchtest du den Anruf beenden und einen neuen mit <![CDATA[<b>%2$s</b>]]> starten?</string>

@@ -1214,8 +1214,8 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         if (currentUser != null && currentEncryptedChat == null && currentUser.bot) {
             //CloudVeil Start
             if (!Constants.LOCK_DISABLE_BOTS) {
-                headerItem.addSubItem(bot_settings, LocaleController.getString("BotSettings", R.string.BotSettings));
-                headerItem.addSubItem(bot_help, LocaleController.getString("BotHelp", R.string.BotHelp));
+                //headerItem.addSubItem(bot_settings, LocaleController.getString("BotSettings", R.string.BotSettings), 0);
+                //headerItem.addSubItem(bot_help, LocaleController.getString("BotHelp", R.string.BotHelp), 0);
                 updateBotButtons();
             }
             //CloudVeil End
@@ -2044,7 +2044,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                         return;
                     }
                     int top;
-                    if (Constants.LOCK_DISABLE_BOTS && mentionsAdapter.isBotContext() && mentionsAdapter.isMediaLayout() && mentionsAdapter.getBotContextSwitch() == null) {
+                    if (!Constants.LOCK_DISABLE_BOTS && mentionsAdapter.isBotContext() && mentionsAdapter.isMediaLayout() && mentionsAdapter.getBotContextSwitch() == null) {
                         top = mentionListViewScrollOffsetY - AndroidUtilities.dp(4);
                     } else {
                         top = mentionListViewScrollOffsetY - AndroidUtilities.dp(2);
