@@ -342,9 +342,12 @@ public class MentionsAdapter extends RecyclerListView.SelectionAdapter {
         if (delegate != null) {
             if (foundContextBot != null) {
                 delegate.onContextSearch(true);
-            } else if (username.equals("gif")) {
-                searchingContextUsername = "gif";
-                delegate.onContextSearch(false);
+            }
+
+            else if (username.equals("gif")) {
+                //searchingContextUsername = "gif";
+                //delegate.onContextSearch(false);
+                return;
             }
         }
         searchingContextQuery = query;
@@ -424,9 +427,11 @@ public class MentionsAdapter extends RecyclerListView.SelectionAdapter {
     public String getBotCaption() {
         if (foundContextBot != null) {
             return foundContextBot.bot_inline_placeholder;
-        } else if (searchingContextUsername != null && searchingContextUsername.equals("gif")) {
-            return "Search GIFs";
         }
+        /*
+        else if (searchingContextUsername != null && searchingContextUsername.equals("gif")) {
+            return "Search GIFs";
+        }*/
         return null;
     }
 
