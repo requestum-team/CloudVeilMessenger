@@ -528,6 +528,7 @@
     <string name="NobodyLikesSpamUrl">https://telegram.org/faq#can-39t-send-messages-to-non-contacts</string>
     <string name="MoreInfo">More info</string>
     <string name="ShareSendTo">Send to...</string>
+
     <string name="ShareComment">Write a comment...</string>
     <string name="TapHereGifs">Tap here to access saved GIFs</string>
     <string name="PinMessage">Pin</string>
@@ -1410,11 +1411,11 @@
     <string name="Page5Title">Powerful</string>
     <string name="Page6Title">Cloud-Based</string>
     <string name="Page1Message">The world\'s <![CDATA[<b>fastest</b>]]> messaging app.\nIt is <![CDATA[<b>free</b>]]> and <![CDATA[<b>secure</b>]]>.</string>
-    <string name="Page2Message"><![CDATA[<b>Telegram</b>]]> delivers messages faster than\nany other application.</string>
-    <string name="Page3Message"><![CDATA[<b>Telegram</b>]]> is free forever. No ads.\nNo subscription fees.</string>
-    <string name="Page4Message"><![CDATA[<b>Telegram</b>]]> keeps your messages safe\nfrom hacker attacks.</string>
-    <string name="Page5Message"><![CDATA[<b>Telegram</b>]]> has no limits on the size of\nyour media and chats.</string>
-    <string name="Page6Message"><![CDATA[<b>Telegram</b>]]> lets you access your messages\nfrom multiple devices.</string>
+    <string name="Page2Message"><![CDATA[<b>CloudVeil Messenger</b>]]> delivers messages faster than\nany other application.</string>
+    <string name="Page3Message"><![CDATA[<b>CloudVeil Messenger</b>]]> is free forever. No ads.\nNo subscription fees.</string>
+    <string name="Page4Message"><![CDATA[<b>CloudVeil Messenger</b>]]> keeps your messages safe\nfrom hacker attacks.</string>
+    <string name="Page5Message"><![CDATA[<b>CloudVeil Messenger</b>]]> has no limits on the size of\nyour media and chats.</string>
+    <string name="Page6Message"><![CDATA[<b>CloudVeil Messenger</b>]]> lets you access your messages\nfrom multiple devices.</string>
     <string name="StartMessaging">Start Messaging</string>
     <!-- VoIP -->
     <string name="AccountSettings">Account Settings</string>
