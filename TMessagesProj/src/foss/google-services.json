@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "785163876089",
+    "project_id": "firebase-cloudveil"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785163876089:android:ced908e3a237f308",
+        "android_client_info": {
+          "package_name": "org.cloudveil.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785163876089-ti35kfbmf3u7d7j117ib23d15v92or6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF4knytzTMjHw93dj9l1__Q7a_KNl81V8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
