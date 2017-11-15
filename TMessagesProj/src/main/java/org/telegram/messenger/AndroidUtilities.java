@@ -1211,6 +1211,11 @@ public class AndroidUtilities {
             public boolean includeDeviceData() {
                 return true;
             }
+
+            @Override
+            public boolean shouldAutoUploadCrashes() {
+                return BuildVars.DEBUG_VERSION;
+            }
         });
     }
 
